@@ -305,7 +305,7 @@ const getWebAimLink = (color1, color2) => {
  * @returns {string} GRS theme url.
  */
 const getGRSLink = (colors) => {
-  const url = `https://github-readme-stats.vercel.app/api?username=anuraghazra`;
+  const url = `https://github-readme-stats.vercel.app/api?username=jonathan-vella`;
   const colorString = Object.keys(colors)
     .map((colorKey) => `${colorKey}=${colors[colorKey]}`)
     .join("&");
@@ -524,7 +524,7 @@ export const run = async () => {
           \r### ${
             themeName.charAt(0).toUpperCase() + themeName.slice(1)
           } theme preview
-          
+
           \r${warnings.map((warning) => `- :warning: ${warning}.\n`).join("")}
           \r${errors.map((error) => `- :x: ${error}.\n`).join("")}
 
@@ -570,7 +570,7 @@ export const run = async () => {
         \r### ${
           themeName.charAt(0).toUpperCase() + themeName.slice(1)
         } theme preview
-        
+
         \r${warnings.map((warning) => `- :warning: ${warning}.\n`).join("")}
 
         \ntitle_color: <code>#${titleColor}</code> | icon_color: <code>#${iconColor}</code> | text_color: <code>#${textColor}</code> | bg_color: <code>#${bgColor}</code>${
@@ -603,7 +603,7 @@ export const run = async () => {
           ? "**Result:** :heavy_check_mark: All themes are valid."
           : "**Result:** :x: Some themes are invalid.\n\n" + FAIL_TEXT
       }
-      
+
       \r## Details
       \r${previewBody}
     `;
